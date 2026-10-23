@@ -12,6 +12,8 @@ The output is rectified to face the camera and saved losslessly as TIFF or BMP.
 
 Usage:
     python painting_crop_v7.py PHOTO [--format tiff|bmp] [corners]
+
+
 """
 import argparse
 import json

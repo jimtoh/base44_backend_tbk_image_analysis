@@ -54,8 +54,10 @@ rectifies it. A crop that fails the checks exits with status 1 and no output fil
 
 Run once, and again whenever `vault_images/` changes:
 
+# TMS: YES for indexing
 ```
-venv/bin/python3 image_analysis/golden_match_v5.py build-vault vault_images image_analysis/vault_index
+venv/bin/python3 image_analysis/golden_match_v5.py build-vault vault_images image_analysis/vault_index --json > vault_index.json
+
 ```
 
 Add `--json > image_analysis/vault_index.json` to save the summary and hide progress.
@@ -65,9 +67,10 @@ Building 70 goldens takes about 30 seconds and produces about 370 MB.
 
 Search a folder of crops, or individual files:
 
+# TMS: YES for matching
 ```
-venv/bin/python3 image_analysis/golden_match_v5.py search image_analysis/vault_index client_images
-venv/bin/python3 image_analysis/golden_match_v5.py search image_analysis/vault_index client_images --json > image_analysis/results.js
+venv/bin/python3 image_analysis/golden_match_v5.py search image_analysis/vault_index client_images --json > result.js
+
 ```
 
 Give the matcher the flattened crops (`*_painting_v7.tiff`), not the original photos.

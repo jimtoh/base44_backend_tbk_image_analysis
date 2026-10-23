@@ -9,6 +9,10 @@ Build the index from the repository root:
 
 ```
 venv/bin/python3 image_analysis/golden_match_v5.py build-vault vault_images image_analysis/vault_index
+
+or 
+
+.venv/bin/python3 image_analysis/golden_match_v5.py build-vault vault_images image_analysis/vault_index
 ```
 
 To save the build summary as JSON and hide progress, add `--json > image_analysis/vault_index.json`.
