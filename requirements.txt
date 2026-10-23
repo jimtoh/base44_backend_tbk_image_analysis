@@ -1,0 +1,5 @@
+numpy==2.5.4
+opencv-python-headless==5.0.0.93
+torch
+torchvision
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git

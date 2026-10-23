@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+models/*
+!models/folder_purpose.md
+client_images/*
+!client_images/folder_purpose.md
+vault_images/*
+!vault_images/folder_purpose.md
+image_analysis/vault_index/*
+!image_analysis/vault_index/folder_purpose.md
+image_analysis/*.js
+image_analysis/*.json
