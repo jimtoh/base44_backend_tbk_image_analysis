@@ -1,4 +1,4 @@
-# i am getting https://github.com/jimtoh/base44_tbk_image_analysis to be converted to a backend that base44 app, https://taybakkoi-art-verify.base44.app, can use. What was your analysis that you have done to fulfill this?
+# i am getting https://github.com/jimtoh/base44_backend_tbk_image_analysis to be converted to a backend that base44 app, https://taybakkoi-art-verify.base44.app, can use. What was your analysis that you have done to fulfill this?
 
 ===
 
@@ -22,7 +22,7 @@ After inspecting the current integration, the Python wrapper is **a scaffold, no
 The right completion path is to adapt the wrapper to the repository’s actual interfaces, preserve manual corners, secure and deploy it, then compare its outputs against the original Python pipeline on identical images.
 
 ===
-Listen, if i want to convert repo https://github.com/jimtoh/base44_tbk_image_analysis that base44 can use with effectiveness, what is your proposal? I will convert this repo to a 2nd repo that you will read, plan and code into this app.
+Listen, if i want to convert repo https://github.com/jimtoh/base44_baskend_tbk_image_analysis that base44 can use with effectiveness, what is your proposal? I will convert this repo to a 2nd repo that you will read, plan and code into this app.
 
 **My proposal is to make the second repo a deployable Python analysis service—not another JavaScript approximation.** This app would handle submissions, private images and results; the service would run your original crop and matching algorithms.
 
