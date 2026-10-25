@@ -1,0 +1,11 @@
+.git
+.venv
+venv
+__pycache__
+*.py[cod]
+client_images
+client_pre_images
+vault_images
+image_analysis/vault_index
+models/*.pth
+service_data

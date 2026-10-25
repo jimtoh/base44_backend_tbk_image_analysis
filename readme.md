@@ -4,11 +4,13 @@ Artwork matching for client submissions. A client sends photos of a painting. Th
 painting is cropped and flattened, then matched against a vault of golden reference
 paintings. The result is a similarity measure, not proof of authenticity.
 
+For the planned Base44 integration, see [BASE44_BACKEND_PLAN.md](BASE44_BACKEND_PLAN.md).
+
 ## Layout
 
 | Folder | Contents |
 |---|---|
-| `image_analysis/` | `painting_crop_v7.py` (crop) and `golden_match_v5.py` (match). The built index (`vault_index/`) and saved results are generated locally and are not in git. |
+| `image_analysis/` | `painting_crop_v8.py` (crop) and `golden_match_v5.py` (match). The built index (`vault_index/`) and saved results are generated locally and are not in git. |
 | `client_images/` | Client photos to process. Not in git. |
 | `vault_images/` | Golden reference images (circular BMP, about 10 MB each). Not in git. |
 | `models/` | `sam_vit_b_01ec64.pth`, the Segment Anything checkpoint. Not in git. |
@@ -22,8 +24,8 @@ python3 -m venv venv
 venv/bin/pip install -r requirements.txt
 ```
 
-`requirements.txt` includes `segment-anything` from GitHub and `torch`, which are
-needed only by the crop step. The matcher needs OpenCV and NumPy only.
+`requirements.txt` includes `segment-anything` from a pinned Git commit and `torch`,
+which are needed only by the crop step. The matcher needs OpenCV and NumPy only.
 
 Download the Segment Anything checkpoint used by the crop step:
 
@@ -35,13 +37,43 @@ sha256sum models/sam_vit_b_01ec64.pth
 The expected SHA-256 is `ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912`
 (375042383 bytes).
 
+## Run the Base44 service
+
+The service is a single-process FastAPI application that wraps the same crop and
+matching functions used by the CLI. It keeps job and vault files in `BASE44_DATA_DIR`
+(default `/data`), so mount that path on persistent storage. Run one Uvicorn worker
+per data directory; the local worker queue is not shared between processes.
+
+Set a long random `BASE44_SERVICE_TOKEN` and a comma-separated allowlist of image
+storage hostnames in `IMAGE_URL_HOSTS`. Only HTTPS URLs on those hosts are accepted.
+Mount the verified SAM checkpoint or set `SAM_MODEL_PATH`; readiness verifies its
+SHA-256. Set `BASE44_PUBLIC_URL` to the externally reachable service origin when
+Base44 needs absolute preview URLs. The queued-job limit defaults to 100 and can
+be changed with `MAX_QUEUED_JOBS`. Example local run:
+
+```
+export BASE44_SERVICE_TOKEN='replace-with-a-long-random-secret'
+export IMAGE_URL_HOSTS='your-storage.example.com'
+export BASE44_PUBLIC_URL='https://analysis.example.com'
+export BASE44_DATA_DIR="$PWD/service_data"
+venv/bin/uvicorn image_analysis.base44_service:app --host 127.0.0.1 --port 8000 --workers 1
+```
+
+`GET /health/live` is unauthenticated. All other routes require the bearer token.
+The service implements `GET /health/ready`, `PUT /v1/vault`, `POST /v1/jobs`,
+`GET /v1/jobs/{job_id}`, and the protected crop-preview artifact route. See
+[BASE44_BACKEND_PLAN.md](BASE44_BACKEND_PLAN.md) for request/response shapes and
+operational limits. This filesystem-backed queue is intended for one service
+instance with persistent storage; use a shared durable queue and database before
+running multiple replicas.
+
 ## Step 1: Crop client photos
 
 ```
-venv/bin/python3 image_analysis/painting_crop_v7.py client_images/PHOTO.jpg
+venv/bin/python3 image_analysis/painting_crop_v8.py client_images/PHOTO.jpg
 ```
 
-Writes `client_images/PHOTO_painting_v7.tiff` and prints a JSON report. Options:
+Writes `client_images/PHOTO_painting_v8.tiff` and prints a JSON report. Options:
 
 - `--format bmp` for BMP output instead of TIFF.
 - `--model PATH` to use a different SAM checkpoint.
@@ -73,7 +105,7 @@ venv/bin/python3 image_analysis/golden_match_v5.py search image_analysis/vault_i
 
 ```
 
-Give the matcher the flattened crops (`*_painting_v7.tiff`), not the original photos.
+Give the matcher the flattened crops (`*_painting_v8.tiff`), not the original photos.
 Several crops of the same artwork can be searched together. A golden is reported as
 the match only if it wins on at least half the shots.
 
