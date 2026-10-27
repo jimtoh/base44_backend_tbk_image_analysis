@@ -1,0 +1,887 @@
+{
+  "reports": [
+    {
+      "input": "client_pre_images/IMG-20261003-WA0003.jpg",
+      "output": "client_pre_images/output/IMG-20261003-WA0003_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.99",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            491.20001220703125,
+            393.8999938964844
+          ],
+          [
+            3500.39990234375,
+            279.0
+          ],
+          [
+            3502.699951171875,
+            2596.300048828125
+          ],
+          [
+            385.79998779296875,
+            2780.89990234375
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 385,
+        "y": 279,
+        "width": 3118,
+        "height": 2502
+      },
+      "output_size": {
+        "width": 3122,
+        "height": 2389
+      }
+    },
+    {
+      "input": "client_pre_images/IMG-20261003-WA0005.jpg",
+      "output": "client_pre_images/output/IMG-20261003-WA0005_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.85",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            782.2999877929688,
+            596.0
+          ],
+          [
+            2992.300048828125,
+            612.7999877929688
+          ],
+          [
+            2910.5,
+            2174.800048828125
+          ],
+          [
+            890.0999755859375,
+            2418.699951171875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 782,
+        "y": 595,
+        "width": 2211,
+        "height": 1824
+      },
+      "output_size": {
+        "width": 2210,
+        "height": 1826
+      }
+    },
+    {
+      "input": "client_pre_images/IMG-20261003-WA0006.jpg",
+      "output": "client_pre_images/output/IMG-20261003-WA0006_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.92",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            1050.0,
+            778.2999877929688
+          ],
+          [
+            3209.699951171875,
+            1047.4000244140625
+          ],
+          [
+            3278.10009765625,
+            2207.800048828125
+          ],
+          [
+            1172.800048828125,
+            2657.699951171875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 1049,
+        "y": 778,
+        "width": 2230,
+        "height": 1880
+      },
+      "output_size": {
+        "width": 2176,
+        "height": 1883
+      }
+    },
+    {
+      "input": "client_pre_images/IMG-20261003-WA0008.jpg",
+      "output": "client_pre_images/output/IMG-20261003-WA0008_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_1.00",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            444.6000061035156,
+            408.6000061035156
+          ],
+          [
+            3290.89990234375,
+            276.8999938964844
+          ],
+          [
+            3174.89990234375,
+            2849.5
+          ],
+          [
+            325.1000061035156,
+            2451.699951171875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 325,
+        "y": 276,
+        "width": 2966,
+        "height": 2574
+      },
+      "output_size": {
+        "width": 2877,
+        "height": 2575
+      }
+    },
+    {
+      "input": "client_pre_images/IMG-20261003-WA0009.jpg",
+      "output": "client_pre_images/output/IMG-20261003-WA0009_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.85",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            1063.0999755859375,
+            555.7000122070312
+          ],
+          [
+            3209.60009765625,
+            596.2999877929688
+          ],
+          [
+            3162.199951171875,
+            2458.0
+          ],
+          [
+            1098.0999755859375,
+            2502.199951171875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 1063,
+        "y": 555,
+        "width": 2147,
+        "height": 1948
+      },
+      "output_size": {
+        "width": 2147,
+        "height": 1947
+      }
+    },
+    {
+      "input": "client_pre_images/RUID0946e484566d46aaa736cd092059fc55.jpg",
+      "output": "client_pre_images/output/RUID0946e484566d46aaa736cd092059fc55_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.95",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            1759.0,
+            1099.4000244140625
+          ],
+          [
+            6559.5,
+            1110.699951171875
+          ],
+          [
+            6656.0,
+            4601.7001953125
+          ],
+          [
+            1844.0,
+            4719.2998046875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 1759,
+        "y": 1099,
+        "width": 4897,
+        "height": 3621
+      },
+      "output_size": {
+        "width": 4813,
+        "height": 3621
+      }
+    },
+    {
+      "input": "client_pre_images/RUID577ad0c5c24b4d2aa1b618322f823322.jpg",
+      "output": "client_pre_images/output/RUID577ad0c5c24b4d2aa1b618322f823322_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_1.00",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            267.1000061035156,
+            451.6000061035156
+          ],
+          [
+            2561.10009765625,
+            505.70001220703125
+          ],
+          [
+            2542.800048828125,
+            3607.10009765625
+          ],
+          [
+            315.3999938964844,
+            3633.300048828125
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 267,
+        "y": 451,
+        "width": 2295,
+        "height": 3183
+      },
+      "output_size": {
+        "width": 2295,
+        "height": 3182
+      }
+    },
+    {
+      "input": "client_pre_images/RUID6412e6fa2b514598bef2b856f451a604.jpg",
+      "output": "client_pre_images/output/RUID6412e6fa2b514598bef2b856f451a604_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.97",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            2141.60009765625,
+            1119.199951171875
+          ],
+          [
+            6529.7001953125,
+            1125.9000244140625
+          ],
+          [
+            6668.2998046875,
+            5019.5
+          ],
+          [
+            2043.300048828125,
+            5047.7001953125
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 2043,
+        "y": 1119,
+        "width": 4626,
+        "height": 3929
+      },
+      "output_size": {
+        "width": 4625,
+        "height": 3930
+      }
+    },
+    {
+      "input": "client_pre_images/RUID69cd84f4edb04bdbbe858afca889387a.jpg",
+      "output": "client_pre_images/output/RUID69cd84f4edb04bdbbe858afca889387a_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.94",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            782.0999755859375,
+            591.2000122070312
+          ],
+          [
+            3278.199951171875,
+            569.2999877929688
+          ],
+          [
+            3271.0,
+            2423.300048828125
+          ],
+          [
+            803.9000244140625,
+            2483.699951171875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 782,
+        "y": 569,
+        "width": 2497,
+        "height": 1915
+      },
+      "output_size": {
+        "width": 2496,
+        "height": 1893
+      }
+    },
+    {
+      "input": "client_pre_images/RUID7d260fbcd4054fc4b10c925bd9a97523.jpg",
+      "output": "client_pre_images/output/RUID7d260fbcd4054fc4b10c925bd9a97523_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.95",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            278.5,
+            452.20001220703125
+          ],
+          [
+            2764.89990234375,
+            535.5999755859375
+          ],
+          [
+            2742.10009765625,
+            3671.39990234375
+          ],
+          [
+            239.89999389648438,
+            3565.60009765625
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 239,
+        "y": 452,
+        "width": 2526,
+        "height": 3220
+      },
+      "output_size": {
+        "width": 2504,
+        "height": 3136
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDa8fa0415cb224df58739dcf5d157388f.jpg",
+      "output": "client_pre_images/output/RUIDa8fa0415cb224df58739dcf5d157388f_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.93",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            618.7999877929688,
+            861.9000244140625
+          ],
+          [
+            2558.39990234375,
+            881.5
+          ],
+          [
+            2410.60009765625,
+            3201.800048828125
+          ],
+          [
+            600.7999877929688,
+            3270.60009765625
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 600,
+        "y": 861,
+        "width": 1959,
+        "height": 2410
+      },
+      "output_size": {
+        "width": 1940,
+        "height": 2409
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDbd36f83f2a584cee944ad66ad2c18ca2.jpg",
+      "output": "client_pre_images/output/RUIDbd36f83f2a584cee944ad66ad2c18ca2_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.98",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            264.1000061035156,
+            448.3999938964844
+          ],
+          [
+            2506.300048828125,
+            445.3999938964844
+          ],
+          [
+            2528.60009765625,
+            3692.60009765625
+          ],
+          [
+            398.0,
+            3740.199951171875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 264,
+        "y": 445,
+        "width": 2265,
+        "height": 3296
+      },
+      "output_size": {
+        "width": 2242,
+        "height": 3294
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDc29225e63bb44ef1917c64cf6f7d063e.jpg",
+      "output": "client_pre_images/output/RUIDc29225e63bb44ef1917c64cf6f7d063e_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.97",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            790.5,
+            570.2999877929688
+          ],
+          [
+            3166.10009765625,
+            565.9000244140625
+          ],
+          [
+            3647.800048828125,
+            2493.300048828125
+          ],
+          [
+            882.5999755859375,
+            2400.0
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 790,
+        "y": 565,
+        "width": 2858,
+        "height": 1929
+      },
+      "output_size": {
+        "width": 2767,
+        "height": 1987
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDc415eab0fe2e48db86172a39851b024a.jpg",
+      "output": "client_pre_images/output/RUIDc415eab0fe2e48db86172a39851b024a_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.98",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            563.7999877929688,
+            759.7000122070312
+          ],
+          [
+            2240.89990234375,
+            724.9000244140625
+          ],
+          [
+            2384.699951171875,
+            3002.199951171875
+          ],
+          [
+            547.4000244140625,
+            2955.800048828125
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 547,
+        "y": 724,
+        "width": 1838,
+        "height": 2279
+      },
+      "output_size": {
+        "width": 1838,
+        "height": 2282
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDc5f5851097ce4cf28b3ca3accbec11fev.jpg",
+      "output": "client_pre_images/output/RUIDc5f5851097ce4cf28b3ca3accbec11fev_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.96",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            224.0,
+            907.2000122070312
+          ],
+          [
+            2648.60009765625,
+            892.0
+          ],
+          [
+            2665.39990234375,
+            3663.0
+          ],
+          [
+            243.6999969482422,
+            3649.10009765625
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 223,
+        "y": 891,
+        "width": 2443,
+        "height": 2772
+      },
+      "output_size": {
+        "width": 2425,
+        "height": 2771
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDd183f2b859134e35a9ca304135c52d26.jpg",
+      "output": "client_pre_images/output/RUIDd183f2b859134e35a9ca304135c52d26_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.92",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            581.9000244140625,
+            955.7999877929688
+          ],
+          [
+            2305.800048828125,
+            963.0
+          ],
+          [
+            2315.300048828125,
+            3195.699951171875
+          ],
+          [
+            532.9000244140625,
+            3293.199951171875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 532,
+        "y": 955,
+        "width": 1784,
+        "height": 2339
+      },
+      "output_size": {
+        "width": 1785,
+        "height": 2338
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDd595c8e1171946e9b9b3cd1aec7c4f9d.jpg",
+      "output": "client_pre_images/output/RUIDd595c8e1171946e9b9b3cd1aec7c4f9d_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.95",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            595.2000122070312,
+            769.9000244140625
+          ],
+          [
+            2344.300048828125,
+            795.7999877929688
+          ],
+          [
+            2329.300048828125,
+            3161.699951171875
+          ],
+          [
+            546.9000244140625,
+            3066.60009765625
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 546,
+        "y": 769,
+        "width": 1799,
+        "height": 2393
+      },
+      "output_size": {
+        "width": 1785,
+        "height": 2366
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDd7184a5a416640198b3ae2a1abce8d00.jpg",
+      "output": "client_pre_images/output/RUIDd7184a5a416640198b3ae2a1abce8d00_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.98",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            280.70001220703125,
+            702.5999755859375
+          ],
+          [
+            2644.199951171875,
+            775.0
+          ],
+          [
+            2616.39990234375,
+            3634.60009765625
+          ],
+          [
+            199.5,
+            3601.800048828125
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 199,
+        "y": 702,
+        "width": 2446,
+        "height": 2933
+      },
+      "output_size": {
+        "width": 2417,
+        "height": 2900
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDd9646533e9f34be7a88de5a9a1ab65ff.jpg",
+      "output": "client_pre_images/output/RUIDd9646533e9f34be7a88de5a9a1ab65ff_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.94",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            996.5,
+            568.7999877929688
+          ],
+          [
+            3381.699951171875,
+            656.2000122070312
+          ],
+          [
+            3323.89990234375,
+            2198.0
+          ],
+          [
+            976.2000122070312,
+            2388.10009765625
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 976,
+        "y": 568,
+        "width": 2406,
+        "height": 1821
+      },
+      "output_size": {
+        "width": 2387,
+        "height": 1819
+      }
+    },
+    {
+      "input": "client_pre_images/RUIDfb1cea3d1ba74a1f8c6aba02fb501e0e.jpg",
+      "output": "client_pre_images/output/RUIDfb1cea3d1ba74a1f8c6aba02fb501e0e_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.94",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            211.60000610351562,
+            766.2000122070312
+          ],
+          [
+            2708.5,
+            784.0999755859375
+          ],
+          [
+            2656.39990234375,
+            3282.0
+          ],
+          [
+            192.5,
+            3221.300048828125
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 192,
+        "y": 766,
+        "width": 2517,
+        "height": 2517
+      },
+      "output_size": {
+        "width": 2497,
+        "height": 2498
+      }
+    },
+    {
+      "input": "client_pre_images/c007__01_full_frame.jpg",
+      "output": "client_pre_images/output/c007__01_full_frame_painting_v8.tiff",
+      "format": "tiff",
+      "method": "sam_box_0.95",
+      "corners": {
+        "order": [
+          "top_left",
+          "top_right",
+          "bottom_right",
+          "bottom_left"
+        ],
+        "points": [
+          [
+            455.20001220703125,
+            758.0999755859375
+          ],
+          [
+            2462.0,
+            758.0999755859375
+          ],
+          [
+            2427.89990234375,
+            3234.199951171875
+          ],
+          [
+            597.7000122070312,
+            3314.199951171875
+          ]
+        ]
+      },
+      "bbox": {
+        "x": 455,
+        "y": 758,
+        "width": 2007,
+        "height": 2557
+      },
+      "output_size": {
+        "width": 2007,
+        "height": 2560
+      }
+    }
+  ],
+  "failures": []
+}

@@ -1,16 +1,18 @@
 # client_images/
 
-Client photos of paintings to be cropped and matched.
+Preprocessed client photos: each original in `client_pre_images/` is cropped to
+the painting and perspective-flattened by `image_analysis/painting_crop_v8.py`
+(Segment Anything ViT-B via SamPredictor finds the painting mask, a quadrilateral
+is fitted to it, and the region is rectified to face the camera).
 
-## Usage
+Files here are `<original>_painting_v8.tiff`, lossless, ready for
+`golden_match_v5.py` search or the ORB pipeline.
 
-Put the photos here, then crop each one from the repository root:
+Regenerate with:
 
 ```
-venv/bin/python3 image_analysis/painting_crop_v7.py client_images/PHOTO.jpg
+python3 image_analysis/painting_crop_v8.py client_pre_images
 ```
 
-Each crop is written next to its photo as `PHOTO_painting_v7.tiff`. Search the crops
-with `golden_match_v5.py` (see `readme.md`).
-
+Crops are written to `client_pre_images/output/`, then copied here.
 Client images are not in git (see `.gitignore`).
